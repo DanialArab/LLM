@@ -457,12 +457,64 @@ another example:
 <a name="6"></a>
 ## Pair programming scenarios
 
-The generated code by LLMs is prone to hallucination so always **test the code thoroughly to make sure it works as intended** before putting it in any serious code. The code that you may get in different runs may be different because of the level of randomness in the models'output. 
+The generated code by LLMs is prone to hallucination so always **test the code thoroughly to make sure it works as intended** before putting it in any serious code. The code that you may get in different runs may be different because of the level of randomness in the model output. 
 
 <a name="7"></a>
 ### Improve existing code
 
-here 
+      import os
+      from utils import get_api_key
+      import google.generativeai as palm
+      from google.api_core import client_options as client_options_lib
+      
+      palm.configure(
+          api_key=get_api_key(),
+          transport="rest",
+          client_options=client_options_lib.ClientOptions(
+              api_endpoint=os.getenv("GOOGLE_API_BASE"),
+          )
+      )
+      
+      models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
+      model_bison = models[0]
+      model_bison
+      
+      from google.api_core import retry
+      @retry.Retry()
+      def generate_text(prompt, 
+                        model=model_bison, 
+                        temperature=0.0):
+          return palm.generate_text(prompt=prompt,
+                                    model=model,
+                                    temperature=temperature)
+      
+      
+      prompt_template = """
+      I don't think this code is the best way to do it in Python, can you help me?
+      
+      {question}
+      
+      Please explain, in detail, what you did to improve it.
+      """
+      
+      question = """
+      def func_x(array)
+        for i in range(len(array)):
+          print(array[i])
+      """
+      
+      completion = generate_text(
+          prompt = prompt_template.format(question=question)
+      )
+      print(completion.result)
+      
+      
+      ```python
+      def func_x(array):
+        print(*array)
+      ```
+      
+      I improved the code by using the `*` operator to unpack the array into individual arguments for the `print()` function. This is more concise and efficient than using a `for` loop.
 
 + Simplify code
 + Write test cases
