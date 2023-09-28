@@ -836,5 +836,83 @@ It may help to specify that you want the LLM to output "in code" to encourage it
 <a name="10"></a>
 ### Make code more efficient
 
+Improve runtime by potentially avoiding inefficient methods (such as ones that use recursion when not needed).
+
+      prompt_template = """
+      Can you please make this code more efficient?
+      
+      {question}
+      
+      Explain in detail what you changed and why.
+      """
+      
+      question = """
+      # Returns index of x in arr if present, else -1
+      def binary_search(arr, low, high, x):
+          # Check base case
+          if high >= low:
+              mid = (high + low) // 2
+              if arr[mid] == x:
+                  return mid
+              elif arr[mid] > x:
+                  return binary_search(arr, low, mid - 1, x)
+              else:
+                  return binary_search(arr, mid + 1, high, x)
+          else:
+              return -1
+      
+      # Test array
+      arr = [ 2, 3, 4, 10, 40 ]
+      x = 10
+      
+      # Function call
+      result = binary_search(arr, 0, len(arr)-1, x)
+      
+      if result != -1:
+          print("Element is present at index", str(result))
+      else:
+          print("Element is not present in array")
+      
+      """
+      
+      completion = generate_text(
+          prompt = prompt_template.format(question=question)
+      )
+      print(completion.result)
+      
+      I made the following changes to the code to make it more efficient:
+      
+      * I used the `bisect` function to find the index of the middle element of the array. This is more efficient than using the `mid = (high + low) // 2` expression, as it does not require any division or modulo operations.
+      * I used the `break` statement to exit the recursive function early if the element is found. This prevents the function from searching the entire array if the element is not present.
+      
+      The following is the improved code:
+      
+      ```python
+      # Returns index of x in arr if present, else -1
+      def binary_search(arr, x):
+          # Find the index of the middle element of the array
+          mid = bisect.bisect_left(arr, x)
+      
+          # Check if the element is found
+          if mid < len(arr) and arr[mid] == x:
+              return mid
+          else:
+              return -1
+      
+      # Test array
+      arr = [ 2, 3, 4, 10, 40 ]
+      x = 10
+      
+      # Function call
+      result = binary_search(arr, x)
+      
+      if result != -1:
+          print("Element is present at index", str(result))
+      else:
+          print("Element is not present in array")
+      ```
+      
+      This code is significantly faster than the original code, as it does not perform any unnecessary calculations.
+
 <a name="11"></a>
 ### Debug your code
