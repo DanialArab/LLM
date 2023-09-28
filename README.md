@@ -7,6 +7,7 @@ Instructor: Laurence Moroney - Google.
 1. [Prerequisites](#1)
 2. [Introduction](#2)
 3. [Pattern](#3)
+4. [Examples](#4) 
 
 <a name="1"></a>
 ## Prerequisites 
@@ -112,7 +113,8 @@ Output:
 
 We can print output out in the Jupyter Notebook or in a real-world application we may be injecting the code into an IDE or saving it into a repo etc. 
 
-Example:
+<a name="4"></a>
+## Example
 
         prompt = "Show me how to iterate across a list in Python."
         completion = generate_text(prompt)
