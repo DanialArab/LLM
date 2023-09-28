@@ -66,8 +66,8 @@ returns back:
 As discussed, the models are based on animal sizes so gecko is smaller than bison models.
 
 Some notes on the models:
-+ **generateText** is currently recommended for coding-related prompts.
-+ **generateMessage** is optimized for multi-turn chats (dialogues) with an LLM.
++ **generateText** is currently recommended for coding-related prompts. It is more optimized for a single shot, this one generally works better for code. 
++ **generateMessage** is optimized for multi-turn chats (dialogues) with an LLM. It keeps track of contexts.
 
         models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
         model_bison = models[0]
