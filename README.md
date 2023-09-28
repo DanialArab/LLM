@@ -112,6 +112,62 @@ Output:
 
 We can print output out in the Jupyter Notebook or in a real-world application we may be injecting the code into an IDE or saving it into a repo etc. 
 
+Example:
+
+        prompt = "Show me how to iterate across a list in Python."
+        completion = generate_text(prompt)
+        print(completion.result)
+
+returns me back:
+
+        To iterate across a list in Python, you can use the `for` loop. The syntax is as follows:
+        
+        ```python
+        for item in list:
+          # do something with item
+        ```
+        
+        For example, the following code prints each item in the list `my_list`:
+        
+        ```python
+        my_list = ["a", "b", "c"]
+        
+        for item in my_list:
+          print(item)
+        ```
+        
+        Output:
+        
+        ```
+        a
+        b
+        c
+        ```
+        
+        You can also use the `enumerate()` function to iterate over a list and get the index of each item. The syntax is as follows:
+
+        ```python
+        for index, item in enumerate(list):
+          # do something with index and item
+        ```
+        
+        For example, the following code prints the index and value of each item in the list `my_list`:
+        
+        ```python
+        my_list = ["a", "b", "c"]
+        
+        for index, item in enumerate(my_list):
+          print(index, item)
+        ```
+        
+        Output:
+        
+        ```
+        0 a
+        1 b
+        2 c
+        ```
+
 
 <a name="1"></a>
 ## Pair programming scenarios
