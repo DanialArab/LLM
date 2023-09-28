@@ -63,6 +63,8 @@ returns back:
         description: Obtain a distributed representation of a text.
         generation methods:['embedText']
 
+As discussed, the models are based on animal sizes so gecko is smaller than bison models.
+
 Some notes on the models:
 + **generateText** is currently recommended for coding-related prompts.
 + **generateMessage** is optimized for multi-turn chats (dialogues) with an LLM.
@@ -76,6 +78,7 @@ returns me back
         Model(name='models/text-bison-001', base_model_id='', version='001', display_name='Text Bison', description='Model targeted for text generation.', input_token_limit=8196, output_token_limit=1024, supported_generation_methods=['generateText', 'countTextTokens', 'createTunedTextModel'], temperature=0.7, top_p=0.95, top_k=40) 
 
 **text-bison-001** is the model that we use. 
+
 
 <a name="1"></a>
 ## Pair programming scenarios
