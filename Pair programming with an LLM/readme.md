@@ -752,7 +752,86 @@ we can even make it even better (with the same question):
 <a name="9"></a>
 ### Write test cases
 
-here
+It may help to specify that you want the LLM to output "in code" to encourage it to write unit tests instead of just returning test cases in English.
+
+      prompt_template = """
+      Can you please create test cases in code for this Python code?
+      
+      {question}
+      
+      Explain in detail what these test cases are designed to achieve.
+      """
+      
+      # Note that the code I'm using here was output in the previous
+      # section. Your output code may be different.
+      question = """
+      class Node:
+        def __init__(self, dataval=None):
+          self.dataval = dataval
+          self.nextval = None
+      
+      class SLinkedList:
+        def __init__(self):
+          self.head = None
+      
+      def create_linked_list(data):
+        head = Node(data[0])
+        for i in range(1, len(data)):
+          node = Node(data[i])
+          node.nextval = head
+          head = node
+        return head
+      
+      list1 = create_linked_list(["Mon", "Tue", "Wed"])
+      """
+      
+      completion = generate_text(
+          prompt = prompt_template.format(question=question)
+      )
+      print(completion.result)
+      
+      
+      ```python
+      import unittest
+      
+      class TestSLinkedList(unittest.TestCase):
+      
+          def test_create_linked_list(self):
+              """Test that a linked list is created with the correct data."""
+              data = ["Mon", "Tue", "Wed"]
+              head = create_linked_list(data)
+              self.assertEqual(head.dataval, "Mon")
+              self.assertEqual(head.nextval.dataval, "Tue")
+              self.assertEqual(head.nextval.nextval.dataval, "Wed")
+      
+          def test_insert_into_linked_list(self):
+              """Test that a new node can be inserted into a linked list."""
+              data = ["Mon", "Tue", "Wed"]
+              head = create_linked_list(data)
+              new_node = Node("Thu")
+              new_node.nextval = head.nextval
+              head.nextval = new_node
+              self.assertEqual(head.nextval.dataval, "Thu")
+              self.assertEqual(head.nextval.nextval.dataval, "Tue")
+      
+          def test_delete_from_linked_list(self):
+              """Test that a node can be deleted from a linked list."""
+              data = ["Mon", "Tue", "Wed"]
+              head = create_linked_list(data)
+              del_node = head.nextval
+              head.nextval = del_node.nextval
+              self.assertEqual(head.nextval.dataval, "Wed")
+              self.assertIsNone(del_node.nextval)
+      
+      if __name__ == "__main__":
+          unittest.main()
+      ```
+      
+      The test cases are designed to achieve the following:
+      
+      * Test that a linked list is created with the correct data.
+      * Test that a new node can be inserted into a linked list.
+      * Test that a node can be deleted from a linked list.
 
 <a name="10"></a>
 ### Make code more efficient
