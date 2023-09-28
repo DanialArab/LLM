@@ -10,7 +10,7 @@ Instructor: Laurence Moroney - Google.
 <a name="1"></a>
 ## Introduction
 
-In this course, we use PaLM API, which gives us access to many of the features of Google's large language models via a coding interface. 
+In this course, we use PaLM API, which gives us access to many of the features of **Google's large language models** via a coding interface. 
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
 
@@ -19,10 +19,10 @@ What I need is:
 + Generative AL Libraries
 + Python coding skills 
 
-API key can be got from developers.generativeai.google. I got the key and set it as an environmental variable. 
-
     !pip install -q google.generativeai
-    
+
+Although I could not get my own PaLM API for my location (from https://developers.generativeai.google/), the API was provided in the course to practice.
+
 <a name="1"></a>
 ## Pair programming scenarios
 + Improve existing code
