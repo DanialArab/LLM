@@ -14,7 +14,12 @@ In this course, we use PaLM API, which gives us access to many of the features o
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
 
-PaLM API 
+What I need is:
++ an API key
++ Generative AL Libraries
++ Python coding skills 
+
+API key can be got from developers.generativeai.google. I got the key and set it as an environmental variable. 
 
 <a name="1"></a>
 ## Pair programming scenarios
