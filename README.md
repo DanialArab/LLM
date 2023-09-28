@@ -21,6 +21,8 @@ What I need is:
 
 API key can be got from developers.generativeai.google. I got the key and set it as an environmental variable. 
 
+    !pip install -q google.generativeai
+    
 <a name="1"></a>
 ## Pair programming scenarios
 + Improve existing code
