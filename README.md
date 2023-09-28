@@ -202,6 +202,7 @@ We can make the prompt a little bit more efficient using a String template.
 <a name="5"></a>
 ## String template
 
+here
 
 <a name="1"></a>
 ## Pair programming scenarios
