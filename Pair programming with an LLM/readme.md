@@ -457,6 +457,8 @@ another example:
 <a name="6"></a>
 ## Pair programming scenarios
 
+The generated code by LLMs is prone to hallucination so always **test the code thoroughly to make sure it works as intended** before putting it in any serious code. The code that you may get in different runs may be different because of the level of randomness in the models'output. 
+
 <a name="7"></a>
 ### Improve existing code
 
