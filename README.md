@@ -15,7 +15,7 @@ In this course, we use PaLM API, which gives us access to many of the features o
 ![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
 
 What I need is:
-+ an API key
++ an API key (unfortunately PaLM API is not available in Canada - Sep. 29, 2023)
 + Generative AL Libraries
 + Python coding skills 
 
