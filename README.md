@@ -300,9 +300,114 @@ returns me back:
             dll.print_list()
         ```
 
-        # option 2
-        decorator = "Insert comments for each line of code."
+option 2:
 
+        decorator = "Insert comments for each line of code."
+        prompt = prompt_template.format(priming=priming_text,
+                                        question=question,
+                                        decorator=decorator)
+        print(prompt)
+
+        You are an expert at writing clear, concise, Python code.
+        
+        create a doubly linked list
+        
+        Insert comments for each line of code.
+        
+        Your solution:
+        
+        completion = generate_text(prompt)
+        print(completion.result)
+        
+        ```python
+        class Node:
+
+            """Node in a doubly linked list."""
+        
+            def __init__(self, data):
+                """Initialize a node with the given data."""
+                self.data = data
+                self.next = None
+                self.prev = None
+        
+        
+        class DoublyLinkedList:
+        
+            """Doubly linked list."""
+        
+            def __init__(self):
+                """Initialize an empty doubly linked list."""
+                self.head = None
+                self.tail = None
+                self.size = 0
+        
+            def __len__(self):
+                """Return the number of nodes in the list."""
+                return self.size
+        
+            def is_empty(self):
+                """Return True if the list is empty."""
+                return self.size == 0
+        
+            def add_first(self, data):
+                """Add a new node with the given data to the front of the list."""
+                new_node = Node(data)
+                if self.is_empty():
+                    self.head = new_node
+                    self.tail = new_node
+                else:
+                    new_node.next = self.head
+                    self.head.prev = new_node
+                    self.head = new_node
+                self.size += 1
+        
+            def add_last(self, data):
+                """Add a new node with the given data to the end of the list."""
+                new_node = Node(data)
+                if self.is_empty():
+                    self.head = new_node
+                    self.tail = new_node
+                else:
+                    new_node.prev = self.tail
+                    self.tail.next = new_node
+                    self.tail = new_node
+                self.size += 1
+        
+            def remove_first(self):
+                """Remove the first node in the list."""
+                if self.is_empty():
+                    raise ValueError("List is empty")
+                self.head = self.head.next
+                if self.head is None:
+                    self.tail = None
+                else:
+                    self.head.prev = None
+                self.size -= 1
+        
+            def remove_last(self):
+                """Remove the last node in the list."""
+                if self.is_empty():
+                    raise ValueError("List is empty")
+                self.tail = self.tail.prev
+                if self.tail is None:
+                    self.head = None
+                else:
+                    self.tail.next = None
+                self.size -= 1
+        
+            def __iter__(self):
+                """Iterate over the nodes in the list in order."""
+                node = self.head
+                while node is not None:
+                    yield node.data
+                    node = node.next
+        
+            def __str__(self):
+                """Return a string representation of the list."""
+                return "[" + ", ".join(str(node.data) for node in self) + "]"
+        
+        ```
+        
 <a name="1"></a>
 ## Pair programming scenarios
 + Improve existing code
