@@ -4,24 +4,66 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/pair-programming-l
 
 Instructor: Laurence Moroney - Google. 
 
-1. [Introduction](#1)
-2. 
+1. [Prerequisites](#1)
+2. [Introduction](#2) 
 
 <a name="1"></a>
-## Introduction
+## Prerequisites 
 
 In this course, we use PaLM API, which gives us access to many of the features of **Google's large language models** via a coding interface. 
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
 
 What I need is:
+
 + an API key (unfortunately PaLM API is not available in Canada - Sep. 29, 2023)
-+ Generative AL Libraries
++ Generative AL Libraries (!pip install -q google.generativeai)
 + Python coding skills 
 
-    !pip install -q google.generativeai
+    
+Although I could not get my own PaLM API for my location (from https://developers.generativeai.google/), the API was provided in the course to practice. To get the provided API key we need a utility to get that through a helper function:
 
-Although I could not get my own PaLM API for my location (from https://developers.generativeai.google/), the API was provided in the course to practice.
+        from utils import get_api_key
+
+<a name="2"></a>
+## Introduction 
+
+There are a lot of animals and in general the larger the animal the larger the model.
+
+        import os
+        import google.generativeai as palm
+        from google.api_core import client_options as client_options_lib
+        
+        palm.configure(
+            api_key=get_api_key(),
+            transport="rest",
+            client_options=client_options_lib.ClientOptions(
+                api_endpoint=os.getenv("GOOGLE_API_BASE"),
+            )
+        )
+
+Let's see what models are available:
+
+        for m in palm.list_models():
+            print(f"name: {m.name}")
+            print(f"description: {m.description}")
+            print(f"generation methods:{m.supported_generation_methods}\n")
+
+returns back:
+
+        name: models/chat-bison-001
+        description: Chat-optimized generative language model.
+        generation methods:['generateMessage', 'countMessageTokens']
+        
+        name: models/text-bison-001
+        description: Model targeted for text generation.
+        generation methods:['generateText', 'countTextTokens', 'createTunedTextModel']
+        
+        name: models/embedding-gecko-001
+        description: Obtain a distributed representation of a text.
+        generation methods:['embedText']
+
+
 
 <a name="1"></a>
 ## Pair programming scenarios
