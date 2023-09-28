@@ -98,6 +98,20 @@ the default temperature for the model is 0.7 but here we set it to 0.0 to make i
 
 For all the examples we use the following pattern:
 
+Create a prompt:
+
+![](https://github.com/DanialArab/images/blob/main/LLM/create%20a%20prompt.PNG)
+
+Completion:
+
+![](https://github.com/DanialArab/images/blob/main/LLM/completion.PNG)
+
+Output:
+
+![](https://github.com/DanialArab/images/blob/main/LLM/output.PNG)
+
+We can print output out in the Jupyter Notebook or in a real-world application we may be injecting the code into an IDE or saving it into a repo etc. 
+
 
 <a name="1"></a>
 ## Pair programming scenarios
