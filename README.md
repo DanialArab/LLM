@@ -202,7 +202,11 @@ We can make the prompt a little bit more efficient using a String template.
 <a name="5"></a>
 ## String template
 
-here
+One useful method to interact with LLM is to prime it using a following prompt template: 
+
++ priming: getting the LLM ready for the type of task you'll ask it to do.
++ question: the specific task.
++ decorator: how to provide or format the output.
 
 <a name="1"></a>
 ## Pair programming scenarios
