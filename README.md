@@ -208,6 +208,101 @@ One useful method to interact with LLM is to prime it using a following prompt t
 + question: the specific task.
 + decorator: how to provide or format the output.
 
+        prompt_template = """
+        {priming}
+        
+        {question}
+        
+        {decorator}
+        
+        Your solution:
+        """
+like
+
+        priming_text = "You are an expert at writing clear, concise, Python code."
+        question = "create a doubly linked list"
+ 
+**Observe how the decorator affects the output**:
+
++ In other non-coding prompt engineering tasks, it's common to use "chain-of-thought prompting" by asking the model to work through the task "step by step" (option 1 below).
++ For certain tasks like generating code, you may want to experiment with other wording that would make sense if you were asking a developer the same question (option 2 below).
+
+        # option 1
+        decorator = "Work through it step by step, and show your work. One step per line."
+
+        prompt = prompt_template.format(priming=priming_text,
+                                    question=question,
+                                    decorator=decorator)
+        print(prompt)
+
+
+        You are an expert at writing clear, concise, Python code.
+        
+        create a doubly linked list
+        
+        Work through it step by step, and show your work. One step per line.
+        
+        Your solution:
+
+Call the API to get the completion:
+
+        completion = generate_text(prompt)
+        print(completion.result)
+
+returns me back:
+
+        ```python
+        class Node:
+            def __init__(self, data):
+                self.data = data
+                self.next = None
+                self.prev = None
+        
+        
+        class DoublyLinkedList:
+            def __init__(self):
+                self.head = None
+                self.tail = None
+        
+            def append(self, data):
+                new_node = Node(data)
+                if self.head is None:
+                    self.head = new_node
+                    self.tail = new_node
+                else:
+                    self.tail.next = new_node
+                    new_node.prev = self.tail
+                    self.tail = new_node
+        
+            def prepend(self, data):
+                new_node = Node(data)
+                if self.head is None:
+                    self.head = new_node
+                    self.tail = new_node
+                else:
+                    new_node.next = self.head
+                    self.head.prev = new_node
+                    self.head = new_node
+        
+            def print_list(self):
+                curr_node = self.head
+                while curr_node is not None:
+                    print(curr_node.data)
+                    curr_node = curr_node.next
+        
+        
+        if __name__ == "__main__":
+            dll = DoublyLinkedList()
+            dll.append(1)
+            dll.append(2)
+            dll.append(3)
+            dll.prepend(0)
+            dll.print_list()
+        ```
+
+        # option 2
+        decorator = "Insert comments for each line of code."
+
 <a name="1"></a>
 ## Pair programming scenarios
 + Improve existing code
