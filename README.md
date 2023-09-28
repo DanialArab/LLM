@@ -10,6 +10,8 @@ Instructor: Laurence Moroney - Google.
 <a name="1"></a>
 ## Introduction
 
+In this course, we use PaLM API, which gives us access to many of the features of Google's large language models via a coding interface. 
+
 ![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
 
 PaLM API 
