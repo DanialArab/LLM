@@ -169,7 +169,29 @@ returns me back:
         1 b
         2 c
         ```
+**Tip**: The words "show me" tends to encourage the PaLM LLM to give more details and explanations compared to if you were to ask "write code to ..."
 
+        prompt = "write code to iterate across a list in Python"
+        completion = generate_text(prompt)
+        print(completion.result)
+
+which gives me back on ly the code:
+
+        ```python
+        # Iterate across a list in Python
+        
+        # Create a list
+        list = ["apple", "banana", "cherry"]
+        
+        # Iterate over the list using a for loop
+        for item in list:
+            print(item)
+        
+        # Output:
+        # apple
+        # banana
+        # cherry
+        ```
 
 <a name="1"></a>
 ## Pair programming scenarios
