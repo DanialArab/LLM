@@ -96,7 +96,7 @@ the default temperature for the model is 0.7 but here we set it to 0.0 to make i
 <a name="3"></a>
 ## Pattern 
 
-For all the examples we use the following pattern:
+For all the examples we use the following pattern to generate code:
 
 Create a prompt:
 
