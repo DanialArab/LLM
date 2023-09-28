@@ -919,3 +919,77 @@ this is a great example of hallucination because in the code it says "Find the i
 
 <a name="11"></a>
 ### Debug your code
+
+
+      prompt_template = """
+      Can you please help me to debug this code?
+      
+      {question}
+      
+      Explain in detail what you found and why it was a bug.
+      """
+      
+      # I deliberately introduced a bug into this code! Let's see if the LLM can find it.
+      # Note -- the model can't see this comment -- but the bug is in the
+      # print function. There's a circumstance where nodes can be null, and trying
+      # to print them would give a null error.
+      question = """
+      class Node:
+         def __init__(self, data):
+            self.data = data
+            self.next = None
+            self.prev = None
+      
+      class doubly_linked_list:
+         def __init__(self):
+            self.head = None
+      
+      # Adding data elements
+         def push(self, NewVal):
+            NewNode = Node(NewVal)
+            NewNode.next = self.head
+            if self.head is not None:
+               self.head.prev = NewNode
+            self.head = NewNode
+      
+      # Print the Doubly Linked list in order
+         def listprint(self, node):
+             print(node.data),
+             last = node
+             node = node.next
+      
+      dllist = doubly_linked_list()
+      dllist.push(12)
+      dllist.push(8)
+      dllist.push(62)
+      dllist.listprint(dllist.head)
+      
+      """
+      
+      completion = generate_text(
+          prompt = prompt_template.format(question=question),
+          temperature = 0.7
+      )
+      print(completion.result)
+      
+      
+      The bug is in the `listprint()` method. The `node` variable is not being updated correctly, so the list is not being printed in the correct order.
+      
+      To fix this bug, we need to change the `listprint()` method so that the `node` variable is updated after each iteration of the loop. We can do this by adding the following line to the end of the loop:
+      
+      ```
+      node = node.next
+      ```
+      
+      This will ensure that the `node` variable is always pointing to the next node in the list, and the list will be printed in the correct order.
+      
+      Here is the updated code for the `listprint()` method:
+      
+      ```
+      def listprint(self, node):
+          print(node.data),
+          last = node
+          node = node.next
+      ```
+      
+      Now, when we run the program, the list will be printed in the correct order.
