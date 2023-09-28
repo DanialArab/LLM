@@ -1350,3 +1350,96 @@ Ask an LLM to explain a complex code base
       ```
       
       The `inferenceResults` array will contain the top N inference results sorted in descending order.
+
+We can also ask an LLM to document a complex code base:
+
+      prompt_template = """
+      Please write technical documentation for this code and \n
+      make it easy for a non swift developer to understand:
+      
+      {question}
+      
+      Output the results in markdown
+      """
+      
+      completion = generate_text(
+          prompt = prompt_template.format(question=CODE_BLOCK)
+      )
+      print(completion.result)
+      
+      
+      ## ModelDataHandler
+      
+      The `ModelDataHandler` class handles all data preprocessing and makes calls to run inference on a given frame
+      by invoking the `Interpreter`. It then formats the inferences obtained and returns the top N
+      results for a successful inference.
+      
+      ### Public Properties
+      
+      * `threadCount`: The current thread count used by the TensorFlow Lite Interpreter.
+      * `resultCount`: The number of top results to return.
+      
+      ### Model Parameters
+      
+      * `batchSize`: The number of images to be processed at a time.
+      * `inputChannels`: The number of color channels in the input images.
+      * `inputWidth`: The width of the input images.
+      * `inputHeight`: The height of the input images.
+      
+      ### Private Properties
+      
+      * `labels`: A list of labels from the given labels file.
+      * `interpreter`: A TensorFlow Lite `Interpreter` object for performing inference on a given model.
+      * `alphaComponent`: Information about the alpha component in RGBA data.
+      
+      ### Initialization
+      
+      The `ModelDataHandler` class is initialized with a model file info and a thread count. The model file info
+      is used to load the model and labels files from the app's main bundle. The thread count is used to
+      specify the number of threads that the `Interpreter` should use to perform inference.
+      
+      ### Public Methods
+      
+      * `runModel(onFrame:)`: Performs image preprocessing, invokes the `Interpreter`, and process the inference results.
+      
+      ### Private Methods
+      
+      * `getTopN(results:)`: Returns the top N inference results sorted in descending order.
+      * `loadLabels(fileInfo:)`: Loads the labels from the labels file and stores them in the `labels` property.
+      * `rgbDataFromBuffer(_:byteCount:)`: Returns the RGB data representation of the given image buffer with the specified `byteCount`.
+      
+      ## Extensions
+      
+      The `Data` and `Array` types are extended to support creating buffers and arrays from unsafe data.
+      
+      ### Data
+      
+      The `Data` type is extended to support creating a new buffer by copying the buffer pointer of the given array.
+      
+      ### Array
+      
+      The `Array` type is extended to support creating a new array from the bytes of the given unsafe data.
+      
+      ## Output
+      
+      The `ModelDataHandler` class returns the top N inference results sorted in descending order. The results
+      are formatted as a list of tuples, where each tuple contains the label index and confidence value for an
+      inference result.
+      
+      For example, the following code would return a list of tuples containing the top 3 inference results for
+      an image:
+      
+      ```
+      let results = ModelDataHandler.runModel(onFrame: pixelBuffer)
+      
+      for (index, confidence) in results {
+        print("Label: \(labels[index]), Confidence: \(confidence)")
+      }
+      ```
+      
+      The output would be similar to the following:
+      
+      ```
+      Label: Dog, Confidence: 0.99
+      Label: Cat, Confidence: 0.01
+      Label: Shoe, Confidence: 0.00
