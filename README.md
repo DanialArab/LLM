@@ -5,7 +5,8 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/pair-programming-l
 Instructor: Laurence Moroney - Google. 
 
 1. [Prerequisites](#1)
-2. [Introduction](#2) 
+2. [Introduction](#2)
+3. [Pattern](#3)
 
 <a name="1"></a>
 ## Prerequisites 
@@ -78,6 +79,24 @@ returns me back
         Model(name='models/text-bison-001', base_model_id='', version='001', display_name='Text Bison', description='Model targeted for text generation.', input_token_limit=8196, output_token_limit=1024, supported_generation_methods=['generateText', 'countTextTokens', 'createTunedTextModel'], temperature=0.7, top_p=0.95, top_k=40) 
 
 **text-bison-001** is the model that we use. 
+
+Now that we have our model, we create another helper function to generate text:
+
+        from google.api_core import retry
+        @retry.Retry()
+        def generate_text(prompt,
+                          model=model_bison,
+                          temperature=0.0):
+            return palm.generate_text(prompt=prompt,
+                                      model=model,
+                                      temperature=temperature)
+
+the default temperature for the model is 0.7 but here we set it to 0.0 to make it a more **deterministic model** so we can get more consistent results based on our prompts.
+
+<a name="3"></a>
+## Pattern 
+
+For all the examples we use the following pattern:
 
 
 <a name="1"></a>
