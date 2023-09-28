@@ -9,6 +9,12 @@ Instructor: Laurence Moroney - Google.
 3. [Pattern](#3)
 4. [Examples](#4)
 5. [String template](#5)
+6. [Pair programming scenarios](#6)
+   1. [Improve existing code](#7)
+   2. [Simplify code](#8)
+   3. [Write test cases](#9)
+   4. [Make code more efficient](#10)
+   5. [Debug your code](#11)
 
 <a name="1"></a>
 ## Prerequisites 
@@ -407,10 +413,54 @@ option 2:
                 return "[" + ", ".join(str(node.data) for node in self) + "]"
         
         ```
+
+another example:
+
+        priming_text = "You are an expert at writing clear, concise, Python code."
+        question = """create a very large list of random numbers in python,  and then write code to sort that list"""
+        decorator = "Insert comments for each line of code."
+        prompt = prompt_template.format(priming=priming_text,
+                                        question=question,
+                                        decorator=decorator)
+        print(prompt)
+
+        You are an expert at writing clear, concise, Python code.
+
+        create a very large list of random numbers in python, 
+        and then write code to sort that list
         
-<a name="1"></a>
+        Insert comments for each line of code.
+        
+        Your solution:
+
+        ```python
+        # Create a list of 100,000 random numbers between 0 and 100
+        random_numbers = [random.randint(0, 100) for _ in range(100000)]
+        
+        # Sort the list of random numbers
+        sorted_random_numbers = sorted(random_numbers)
+        
+        # Print the first 10 elements of the sorted list
+        print(sorted_random_numbers[:10])
+        
+        ```
+        
+        **Explanation:**
+        
+        * The first line of code creates a list of 100,000 random numbers between 0 and 100. The `random.randint()` function is used to generate a random integer between two specified values.
+        * The second line of code sorts the list of random numbers using the `sorted()` function. The `sorted()` function takes a list as its argument and returns a new list that is sorted in ascending order.
+        * The third line of code prints the first 10 elements of the sorted list. The `print()` function is used to print the contents of a list to the console.
+        
+        This code is clear, concise, and Pythonic. It uses the standard Python library functions to create a list of random numbers, sort the list, and print the results.
+
+
+<a name="6"></a>
 ## Pair programming scenarios
-+ Improve existing code
+
+<a name="7"></a>
+### Improve existing code
+
+
 + Simplify code
 + Write test cases
 + Make code more efficient
