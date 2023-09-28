@@ -4,6 +4,16 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/pair-programming-l
 
 Instructor: Laurence Moroney - Google. 
 
+1. [Introduction](#1)
+2. 
+
+<a name="1"></a>
+## Introduction
+
+![](https://github.com/DanialArab/images/blob/main/LLM/google%20generative%20AI.PNG)
+
+PaLM API 
+
 <a name="1"></a>
 ## Pair programming scenarios
 + Improve existing code
