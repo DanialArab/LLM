@@ -914,6 +914,8 @@ Improve runtime by potentially avoiding inefficient methods (such as ones that u
       
       This code is significantly faster than the original code, as it does not perform any unnecessary calculations.
 
-this is a great example of hallucination 
+this is a great example of hallucination because in the code it says "Find the index of the middle element of the array", but **bisect** does a whole lot more than that, it says that it uses a `break` statement, which is not true. So this is an example of that we are given a much more efficient code but there is hallucination. 
+
+
 <a name="11"></a>
 ### Debug your code
