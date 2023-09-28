@@ -921,6 +921,7 @@ this is a great example of hallucination because in the code it says "Find the i
 ### Debug your code
 
 
+
       prompt_template = """
       Can you please help me to debug this code?
       
@@ -968,10 +969,31 @@ this is a great example of hallucination because in the code it says "Find the i
       
       completion = generate_text(
           prompt = prompt_template.format(question=question),
+          temperature = 0.0
+      )
+      print(completion.result)
+
+      The bug is in the `listprint()` function. The `node` variable is not being updated correctly, so the list is not being printed in order.
+      
+      To fix this, we need to change the `listprint()` function to:
+      
+      ```
+      def listprint(self, node):
+          print(node.data)
+          while node is not None:
+              print(node.data)
+              node = node.next
+      ```
+      
+      This will fix the bug and the list will be printed in order.
+
+if I change the temperature to 0.7:
+
+      completion = generate_text(
+          prompt = prompt_template.format(question=question),
           temperature = 0.7
       )
       print(completion.result)
-      
       
       The bug is in the `listprint()` method. The `node` variable is not being updated correctly, so the list is not being printed in the correct order.
       
