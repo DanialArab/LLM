@@ -8,7 +8,7 @@ Instructor: Laurence Moroney - Google.
 2. [Introduction](#2)
 3. [Pattern](#3)
 4. [Examples](#4)
-5. [](#5)
+5. [String template](#5)
 
 <a name="1"></a>
 ## Prerequisites 
@@ -196,6 +196,12 @@ which gives me back only the code:
 Some tips:
 + Try copy-pasting some of the generated code and running it in the notebook.
 + Remember to test out the LLM-generated code and debug it to make sure it works as intended
+
+We can make the prompt a little bit more efficient using a String template. 
+
+<a name="5"></a>
+## String template
+
 
 <a name="1"></a>
 ## Pair programming scenarios
