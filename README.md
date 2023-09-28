@@ -63,7 +63,17 @@ returns back:
         description: Obtain a distributed representation of a text.
         generation methods:['embedText']
 
+Some notes on the models:
++ **generateText** is currently recommended for coding-related prompts.
++ **generateMessage** is optimized for multi-turn chats (dialogues) with an LLM.
 
+        models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
+        model_bison = models[0]
+        model_bison
+
+returns me back
+
+        Model(name='models/text-bison-001', base_model_id='', version='001', display_name='Text Bison', description='Model targeted for text generation.', input_token_limit=8196, output_token_limit=1024, supported_generation_methods=['generateText', 'countTextTokens', 'createTunedTextModel'], temperature=0.7, top_p=0.95, top_k=40) 
 
 <a name="1"></a>
 ## Pair programming scenarios
