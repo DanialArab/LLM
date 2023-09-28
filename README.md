@@ -7,7 +7,8 @@ Instructor: Laurence Moroney - Google.
 1. [Prerequisites](#1)
 2. [Introduction](#2)
 3. [Pattern](#3)
-4. [Examples](#4) 
+4. [Examples](#4)
+5. [](#5)
 
 <a name="1"></a>
 ## Prerequisites 
@@ -175,7 +176,7 @@ returns me back:
         completion = generate_text(prompt)
         print(completion.result)
 
-which gives me back on ly the code:
+which gives me back only the code:
 
         ```python
         # Iterate across a list in Python
@@ -192,6 +193,9 @@ which gives me back on ly the code:
         # banana
         # cherry
         ```
+Some tips:
++ Try copy-pasting some of the generated code and running it in the notebook.
++ Remember to test out the LLM-generated code and debug it to make sure it works as intended
 
 <a name="1"></a>
 ## Pair programming scenarios
