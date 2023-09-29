@@ -7,7 +7,7 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/langchain-for-llm-
 <a name="1"></a>
 ## Introduction 
 
-By prompting LLM it is possible to develop AI applications much more quickly and easily. 
+By prompting LLM it is possible to develop AI applications much more quickly and easily. But an application can require prompting an LLM multiple times and parsing its output, and so there's a lot of glue code that needs to be written. **LangChain makes this development process much easier.**
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/overview.PNG)
 
