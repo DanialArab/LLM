@@ -19,4 +19,4 @@ By prompting LLM it is possible to develop AI applications much more quickly and
 
 HERE
 
-I got my OpenAI API Key
+I got my OpenAI API Key from https://platform.openai.com/account/api-keys
