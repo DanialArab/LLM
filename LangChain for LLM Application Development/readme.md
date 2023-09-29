@@ -16,3 +16,7 @@ By prompting LLM it is possible to develop AI applications much more quickly and
 
 <a name="2"></a>
 ## Models, Prompts and Output Parsers
+
+HERE
+
+I got my OpenAI API Key
