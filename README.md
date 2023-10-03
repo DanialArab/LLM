@@ -1,4 +1,4 @@
-# Large Language Models
+# Large Language Models 
  
 This repo documents my understanding of LLMs and how we can integrate them into the pipeline for pair programming or developing an ML model. The following is the list of the courses, mostly from deeplearning.ai, that I took. The course notes along with the pertinent Python scripts are presented in the pertinent repositories as Jupyter Notebook files. 
 
