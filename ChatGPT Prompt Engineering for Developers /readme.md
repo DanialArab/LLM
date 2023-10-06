@@ -3,7 +3,7 @@
 Reference: <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/">ChatGPT Prompt Engineering for Developers by Isa Fulford and Andrew Ng</a>
 
 1. [Introduction](#1)
-2. [](#2)
+2. [Guidelines](#2)
 
 <a name="1"></a>
 ## Introduction 
@@ -17,3 +17,6 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-eng
 + When you use an instruction-tuned LLM, think of giving instructions to another person, say someone that's smart but doesn't know the specifics of your task. So, when an LLM doesn't work, sometimes it's because the instructions weren't clear enough.
 +  **Knowing how to be clear and specific is an important principle of prompting LLMs. The second principle of prompting that is giving the LLM time to 
 think.**
+
+<a name="2"></a>
+## Guidelines
