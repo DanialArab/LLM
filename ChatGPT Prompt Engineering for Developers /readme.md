@@ -20,3 +20,9 @@ think.**
 
 <a name="2"></a>
 ## Guidelines
+
+**Prompting Principles**: 
+
++ Principle 1: Write clear and specific instructions
++ Principle 2: Give the model time to “think”
+
