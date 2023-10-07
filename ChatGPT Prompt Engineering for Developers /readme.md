@@ -12,7 +12,7 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-eng
    2. [Principle 2: Give the model time to “think”](#8)
       1. [Tactic 1: Specify the steps required to complete a task](#9)
       2. [Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion](#10)
- 
+   3. [Model limitations](#11) 
 
 <a name="1"></a>
 ## Introduction 
@@ -424,4 +424,9 @@ returns me back:
       
       Student grade:
       Incorrect
+
+<a name="11"></a>
+### Model limitations
+
+![](https://github.com/DanialArab/images/blob/main/LLM/model_limitations.PNG)
 
