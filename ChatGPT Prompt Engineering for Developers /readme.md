@@ -212,6 +212,8 @@ returns me back:
 <a name="7"></a>
 #### Tactic 4: "Few-shot" prompting
 
+"Few-shot" prompting is just providing examples of successful executions of the task you want to be performed before asking the model to do the actual task you want it to do:
+
         prompt = f"""
         Your task is to answer in a consistent style.
         
