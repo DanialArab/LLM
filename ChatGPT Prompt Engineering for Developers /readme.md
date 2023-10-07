@@ -26,3 +26,6 @@ think.**
 + Principle 1: Write clear and specific instructions
 + Principle 2: Give the model time to “think”
 
+![](https://github.com/DanialArab/images/blob/main/LLM/prompting%20principles.PNG)
+
+
