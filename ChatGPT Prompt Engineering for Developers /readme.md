@@ -28,6 +28,6 @@ think.**
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/prompting%20principles.PNG)
 
-![](https://github.com/DanialArab/images/blob/main/LLM/principle%201.PNG)
+![](https://github.com/DanialArab/images/blob/main/LLM/principle_1.PNG)
 
 
