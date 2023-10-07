@@ -4,10 +4,12 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-eng
 
 1. [Introduction](#1)
 2. [Guidelines](#2)
-   1. [Tactic 1: Use delimiters to clearly indicate distinct parts of the input](#3)
-   2. [Tactic 2: Ask for a structured output](#4)
-   3. [Tactic 3: Ask the model to check whether conditions are satisfied](#5)
-   4. [Tactic 4: "Few-shot" prompting](#6)
+   1. [Principle 1: Write clear and specific instructions](#3)
+      1. [Tactic 1: Use delimiters to clearly indicate distinct parts of the input](#4)
+      2. [Tactic 2: Ask for a structured output](#5)
+      3. [Tactic 3: Ask the model to check whether conditions are satisfied](#6)
+      4. [Tactic 4: "Few-shot" prompting](#7)
+   2. [Principle 2: Give the model time to “think”](#8)
 
 <a name="1"></a>
 ## Introduction 
@@ -35,6 +37,9 @@ think.**
 ![](https://github.com/DanialArab/images/blob/main/LLM/principle_1.PNG)
 
 <a name="3"></a>
+### Principle 1: Write clear and specific instructions
+
+<a name="4"></a>
 ### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 
     import openai
@@ -75,7 +80,7 @@ returns me back:
 
     To guide a model towards the desired output and reduce irrelevant or incorrect responses, it is important to provide clear and specific instructions, which can be achieved through longer prompts that offer more clarity and context.
 
-<a name="4"></a>
+<a name="5"></a>
 ### Tactic 2: Ask for a structured output
 
 prompt = f"""
@@ -112,7 +117,7 @@ returns me back:
           ]
         }
 
-<a name="5"></a>
+<a name="6"></a>
 ### Tactic 3: Ask the model to check whether conditions are satisfied
 
         text_1 = f"""
@@ -194,7 +199,7 @@ returns me back:
         Completion for Text 2:
         No steps provided.
 
-<a name="6"></a>
+<a name="7"></a>
 ### Tactic 4: "Few-shot" prompting
 
         prompt = f"""
