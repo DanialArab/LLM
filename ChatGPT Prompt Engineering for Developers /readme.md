@@ -10,6 +10,9 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-eng
       3. [Tactic 3: Ask the model to check whether conditions are satisfied](#6)
       4. [Tactic 4: "Few-shot" prompting](#7)
    2. [Principle 2: Give the model time to “think”](#8)
+      1. [Tactic 1: Specify the steps required to complete a task](#9)
+      2. [Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion](#10)
+ 
 
 <a name="1"></a>
 ## Introduction 
