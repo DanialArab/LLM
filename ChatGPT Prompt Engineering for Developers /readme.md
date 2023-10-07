@@ -228,3 +228,50 @@ returns me back:
 <a name="8"></a>
 ### Principle 2: Give the model time to “think”
 
+<a name="9"></a>
+### Tactic 1: Specify the steps required to complete a task
+
+      text = f"""
+      In a charming village, siblings Jack and Jill set out on \ 
+      a quest to fetch water from a hilltop \ 
+      well. As they climbed, singing joyfully, misfortune \ 
+      struck—Jack tripped on a stone and tumbled \ 
+      down the hill, with Jill following suit. \ 
+      Though slightly battered, the pair returned home to \ 
+      comforting embraces. Despite the mishap, \ 
+      their adventurous spirits remained undimmed, and they \ 
+      continued exploring with delight.
+      """
+      # example 1
+      prompt_1 = f"""
+      Perform the following actions: 
+      1 - Summarize the following text delimited by triple \
+      backticks with 1 sentence.
+      2 - Translate the summary into French.
+      3 - List each name in the French summary.
+      4 - Output a json object that contains the following \
+      keys: french_summary, num_names.
+      
+      Separate your answers with line breaks.
+      
+      Text:
+      ```{text}```
+      """
+      response = get_completion(prompt_1)
+      print("Completion for prompt 1:")
+      print(response)
+
+returns me back:
+
+      Completion for prompt 1:
+      1 - Jack and Jill, siblings, go on a quest to fetch water from a hilltop well, but encounter misfortune when Jack trips on a stone and tumbles down the hill, with Jill following suit, yet they return home and remain undeterred in their adventurous spirits.
+      
+      2 - Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline, mais rencontrent un malheur lorsque Jack trébuche sur une pierre et dévale la colline, suivi de Jill, pourtant ils rentrent chez eux et restent déterminés dans leur esprit d'aventure.
+      
+      3 - Jack, Jill
+      
+      4 - {
+        "french_summary": "Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline, mais rencontrent un malheur lorsque Jack trébuche sur une pierre et dévale la colline, suivi de Jill, pourtant ils rentrent chez eux et restent déterminés dans leur esprit d'aventure.",
+        "num_names": 2
+      }
+
