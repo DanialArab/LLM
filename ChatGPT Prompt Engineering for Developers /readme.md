@@ -275,3 +275,35 @@ returns me back:
         "num_names": 2
       }
 
+Ask for output in a specified format:
+
+      prompt_2 = f"""
+      Your task is to perform the following actions: 
+      1 - Summarize the following text delimited by 
+        <> with 1 sentence.
+      2 - Translate the summary into French.
+      3 - List each name in the French summary.
+      4 - Output a json object that contains the 
+        following keys: french_summary, num_names.
+      
+      Use the following format:
+      Text: <text to summarize>
+      Summary: <summary>
+      Translation: <summary translation>
+      Names: <list of names in Italian summary>
+      Output JSON: <json with summary and num_names>
+      
+      Text: <{text}>
+      """
+      response = get_completion(prompt_2)
+      print("\nCompletion for prompt 2:")
+      print(response)
+
+returns me back:
+
+      Completion for prompt 2:
+      Summary: Jack and Jill, siblings, go on a quest to fetch water from a hilltop well but encounter misfortune along the way. 
+      Translation: Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline mais rencontrent des malheurs en chemin.
+      Names: Jack, Jill
+      Output JSON: {"french_summary": "Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline mais rencontrent des malheurs en chemin.", "num_names": 2}
+
