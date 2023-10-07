@@ -229,7 +229,7 @@ returns me back:
 ### Principle 2: Give the model time to “think”
 
 <a name="9"></a>
-### Tactic 1: Specify the steps required to complete a task
+#### Tactic 1: Specify the steps required to complete a task
 
       text = f"""
       In a charming village, siblings Jack and Jill set out on \ 
@@ -306,4 +306,7 @@ returns me back:
       Translation: Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline mais rencontrent des malheurs en chemin.
       Names: Jack, Jill
       Output JSON: {"french_summary": "Jack et Jill, frère et sœur, partent en quête d'eau d'un puits au sommet d'une colline mais rencontrent des malheurs en chemin.", "num_names": 2}
+
+<a name="10"></a>
+#### Tactic 2: Instruct the model to work out its own solution before rushing to a conclusion
 
