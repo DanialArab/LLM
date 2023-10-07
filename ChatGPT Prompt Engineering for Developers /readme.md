@@ -93,14 +93,14 @@ some input into your prompt, they might give kind of conflicting instructions to
 <a name="5"></a>
 #### Tactic 2: Ask for a structured output
 
-prompt = f"""
-Generate a list of three made-up book titles along \ 
-with their authors and genres. 
-Provide them in JSON format with the following keys: 
-book_id, title, author, genre.
-"""
-response = get_completion(prompt)
-print(response)
+      prompt = f"""
+      Generate a list of three made-up book titles along \ 
+      with their authors and genres. 
+      Provide them in JSON format with the following keys: 
+      book_id, title, author, genre.
+      """
+      response = get_completion(prompt)
+      print(response)
 
 returns me back:
 
