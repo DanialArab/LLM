@@ -40,7 +40,7 @@ think.**
 ### Principle 1: Write clear and specific instructions
 
 <a name="4"></a>
-### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
+#### Tactic 1: Use delimiters to clearly indicate distinct parts of the input
 
     import openai
     import os
@@ -81,7 +81,7 @@ returns me back:
     To guide a model towards the desired output and reduce irrelevant or incorrect responses, it is important to provide clear and specific instructions, which can be achieved through longer prompts that offer more clarity and context.
 
 <a name="5"></a>
-### Tactic 2: Ask for a structured output
+#### Tactic 2: Ask for a structured output
 
 prompt = f"""
 Generate a list of three made-up book titles along \ 
@@ -118,7 +118,7 @@ returns me back:
         }
 
 <a name="6"></a>
-### Tactic 3: Ask the model to check whether conditions are satisfied
+#### Tactic 3: Ask the model to check whether conditions are satisfied
 
         text_1 = f"""
         Making a cup of tea is easy! First, you need to get some \ 
@@ -200,7 +200,7 @@ returns me back:
         No steps provided.
 
 <a name="7"></a>
-### Tactic 4: "Few-shot" prompting
+#### Tactic 4: "Few-shot" prompting
 
         prompt = f"""
         Your task is to answer in a consistent style.
@@ -224,3 +224,4 @@ returns me back:
         
 <a name="8"></a>
 ### Principle 2: Give the model time to “think”
+
