@@ -222,3 +222,5 @@ returns me back:
         <grandparent>: Resilience is like a mighty oak tree that withstands the strongest storms, bending but never breaking. It is the ability to bounce back from adversity, to find strength in the face of challenges, and to persevere even when the odds seem insurmountable. Just as a diamond is formed under immense pressure, resilience is forged through the trials and tribulations of life.
 
         
+<a name="8"></a>
+### Principle 2: Give the model time to “think”
