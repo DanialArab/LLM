@@ -10,6 +10,7 @@ Instructors: Sharon Zhou and Andrew Ng
     1. [What is fine-tuning and Why fine-tunning](#2)
     3. [What does fine-tuning do for the model](#3)
     4. [Prompt engineering vs. fine-tuning](#4)
+    5. [Benefits of fine-tuning our own LLM](#5)
 
 
 <a name="1"></a>
@@ -51,4 +52,5 @@ In addition to learning new information, fine-tuning can also help steer the mod
 Hallucination = the model may make stuff up (problem of prompt engineering)
 
 
-
+<a name="5"></a>
+### Benefits of fine-tuning our own LLM
