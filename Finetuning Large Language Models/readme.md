@@ -11,7 +11,7 @@ Instructors: Sharon Zhou and Andrew Ng
     3. [What does fine-tuning do for the model](#3)
     4. [Prompt engineering vs. fine-tuning](#4)
     5. [Benefits of fine-tuning our own LLM](#5)
-    6. [Technology stacks used in this course](#6)
+    6. [Technology stack used in this course](#6)
 
 
 <a name="1"></a>
@@ -58,7 +58,7 @@ Hallucination = the model may make stuff up (problem of prompt engineering)
 ![](https://github.com/DanialArab/images/blob/main/LLM/benefits_of_fine_tuning.png)
 
 <a name="6"></a>
-### Technology stacks used in this course
+### Technology stack used in this course
 
 + Pytorch (Meta)
 + Huggingface
