@@ -51,6 +51,7 @@ In addition to learning new information, fine-tuning can also help steer the mod
 
 Hallucination = the model may make stuff up (problem of prompt engineering)
 
-
 <a name="5"></a>
 ### Benefits of fine-tuning our own LLM
+
+![](https://github.com/DanialArab/images/blob/main/LLM/benefits_of_fine_tuning.png)
