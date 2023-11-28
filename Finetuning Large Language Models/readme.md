@@ -7,7 +7,8 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/finetuning-large-l
 Instructors: Sharon Zhou and Andrew Ng
 
 1. [Introduction](#1)
-2. [Why fine-tunning](#2)
+  1. [Why fine-tunning](#2)
+  2. [Prompt engineering vs. fine-tuning ]
 
 
 <a name="1"></a>
@@ -26,7 +27,7 @@ Instructors: Sharon Zhou and Andrew Ng
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunning_llm_cource_materials.png)
 
 <a name="2"></a>
-## Why fine-tunnin 
+### Why fine-tunnin 
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/why_fine_tunning.png)
 
@@ -38,6 +39,7 @@ In addition to learning new information, fine-tuning can also help steer the mod
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunned_vs._non_fine_tunned_model.png)
 
-
+<a name="2"></a>
+### Prompt engineering vs. fine-tuning 
 
 
