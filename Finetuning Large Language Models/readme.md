@@ -35,3 +35,9 @@ Fine-tunning is to take a general-purpose modelS like GPT-3 and specializING it 
 ![](https://github.com/DanialArab/images/blob/main/LLM/what_does_fine_tunning_do.png)
 
 In addition to learning new information, fine-tuning can also help steer the model to **more consistent outputs or more consistent behavior.** 
+
+![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunned_vs._non_fine_tunned_model.png)
+
+
+
+
