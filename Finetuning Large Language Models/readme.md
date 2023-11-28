@@ -34,10 +34,10 @@ Instructors: Sharon Zhou and Andrew Ng
 
 Fine-tunning is to take a general-purpose model like GPT-3 and specializing it into something like chatGPT or taking GPT-4 and turning that into GitHub Copilot to perform auto-complete code. 
 
-![](https://github.com/DanialArab/images/blob/main/LLM/what_does_fine_tunning_do.png)
-
 <a name="3"></a>
 ### What does fine-tuning do for the model
+
+![](https://github.com/DanialArab/images/blob/main/LLM/what_does_fine_tunning_do.png)
 
 In addition to learning new information, fine-tuning can also help steer the model to **more consistent outputs or more consistent behavior.** 
 
