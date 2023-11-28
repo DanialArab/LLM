@@ -7,6 +7,7 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/finetuning-large-l
 Instructors: Sharon Zhou and Andrew Ng
 
 1. [Introduction](#1)
+2. [Why fine-tunning](#2)
 
 
 <a name="1"></a>
@@ -23,3 +24,6 @@ Instructors: Sharon Zhou and Andrew Ng
 + It'll be discussed how fine-tunning differs from prompt engineering or **retrieval augmented generation** alone, and how these techniques can be used alongside fine-tuning. We'll dive into a **specific variant of fine-tuning that's made GPT-3 into chatGPT called instruction fine-tuning**, which **teaches an LLM to follow instructions.**
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunning_llm_cource_materials.png)
+
+<a name="2"></a>
+## Why fine-tunnin 
