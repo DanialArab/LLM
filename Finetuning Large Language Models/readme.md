@@ -9,7 +9,7 @@ Instructors: Sharon Zhou and Andrew Ng
 1. [Introduction](#1)
     1. [What is fine-tuning and Why fine-tunning](#2)
     3. [What does fine-tuning do for the model](#3)
-    4. [Prompt engineering vs. fine-tuning ](#4)
+    4. [Prompt engineering vs. fine-tuning](#4)
 
 
 <a name="1"></a>
@@ -43,7 +43,7 @@ In addition to learning new information, fine-tuning can also help steer the mod
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunned_vs._non_fine_tunned_model.png)
 
-<a name="2"></a>
+<a name="4"></a>
 ### Prompt engineering vs. fine-tuning 
 
 
