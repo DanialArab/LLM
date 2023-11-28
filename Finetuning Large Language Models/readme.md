@@ -7,10 +7,10 @@ Reference: <a href="https://www.deeplearning.ai/short-courses/finetuning-large-l
 Instructors: Sharon Zhou and Andrew Ng
 
 1. [Introduction](#1)
-  1. [What is fine-tuning](#2)
-  2. [Why fine-tunning](#3)
-  3. [What does fine-tuning do for the model](#4)
-  4. [Prompt engineering vs. fine-tuning ](#5)
+    1. [What is fine-tuning](#2)
+    2. [Why fine-tunning](#3)
+    3. [What does fine-tuning do for the model](#4)
+    4. [Prompt engineering vs. fine-tuning ](#5)
 
 
 <a name="1"></a>
