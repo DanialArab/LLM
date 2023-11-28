@@ -12,4 +12,12 @@ Instructors: Sharon Zhou and Andrew Ng
 <a name="1"></a>
 ## Introduction 
 
++ Key question: how can I use large language models on my own data? Taking an open-source LLM and further training it on our own data allows us to have the same interface as chatGPT for example to our own private and proprietary data.
 
++ While writing a prompt can be pretty good at getting an LLM to follow directions to carry out the task like extracting keywords or classifying texts as +ive or -ive sentiments, if we fine tune  the LLM we can get the LLM to even more consistently do what we want.
+
++ A good analogy: prompting an LLM is to speak in a certain style like being more helpful or more polite or to be succinct vs. verbose to a specific certain extent, while fine-tunning is a good way to adjust an LLM's tone. 
+
++ Of course training a foundation of an LLM takes a massive amount of data, maybe hundreds of billions or more words of data and massive GPU compute resources, but with fine-tunning we can take an existing LLM and train it further on our own data
+
+![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunning_llm_cource_materials.png)
