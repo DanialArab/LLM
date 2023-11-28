@@ -29,7 +29,7 @@ Instructors: Sharon Zhou and Andrew Ng
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine_tunning_llm_cource_materials.png)
 
 <a name="2"></a>
-### Why fine-tunnin 
+### Why fine-tuning 
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/why_fine_tunning.png)
 
