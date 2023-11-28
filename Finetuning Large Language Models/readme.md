@@ -8,7 +8,8 @@ Instructors: Sharon Zhou and Andrew Ng
 
 1. [Introduction](#1)
   1. [Why fine-tunning](#2)
-  2. [Prompt engineering vs. fine-tuning ]
+  2. [What does fine-tuning do for the model]
+  3. [Prompt engineering vs. fine-tuning ]
 
 
 <a name="1"></a>
