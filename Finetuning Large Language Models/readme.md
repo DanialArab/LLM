@@ -46,4 +46,9 @@ In addition to learning new information, fine-tuning can also help steer the mod
 <a name="4"></a>
 ### Prompt engineering vs. fine-tuning 
 
+![](https://github.com/DanialArab/images/blob/main/LLM/prompt_vs_fine_tunning.png)
+
+Hallucination = the model may make stuff up (problem of prompt engineering)
+
+
 
