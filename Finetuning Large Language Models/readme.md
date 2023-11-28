@@ -27,3 +27,7 @@ Instructors: Sharon Zhou and Andrew Ng
 
 <a name="2"></a>
 ## Why fine-tunnin 
+
+Fine-tunning is to take a general-purpose modelS like GPT-3 and specializING it into something like chatGPT or taking GPT-4 and turning that into GitHub Copilot to perform auto-complete code. 
+
+![](https://github.com/DanialArab/images/blob/main/LLM/why_fine_tunning.png)
