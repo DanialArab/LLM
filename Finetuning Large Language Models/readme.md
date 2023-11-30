@@ -62,7 +62,7 @@ Hallucination = the model may make stuff up (problem of prompt engineering)
 
 + Pytorch (Meta)
 + Huggingface
-+ Llama library(Lamini)
++ Llama library(Lamini) (the highest level interface)
 
 https://lamini-ai.github.io/#training
 
