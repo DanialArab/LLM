@@ -65,3 +65,8 @@ Hallucination = the model may make stuff up (problem of prompt engineering)
 + Llama library(Lamini(
 
 https://lamini-ai.github.io/#training
+
+Installation -- https://lamini-ai.github.io/get_started/install/#1-get-your-lamini-api-key
+
+conda create --name llm python=3.10.12 (python 3.12 was not compatible)
+pip install --upgrade lamini
