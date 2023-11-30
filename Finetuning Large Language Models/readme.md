@@ -77,7 +77,7 @@ https://lamini-ai.github.io/#training
 ## fine-tuned vs. non-fine-tuned models
 
     from llama import BasicModelRunner
-    non_finetuned   = BasicModelRunner("meta-llama/Llama-2-7b-hf")
+    non_finetuned  = BasicModelRunner("meta-llama/Llama-2-7b-hf")
     non_finetuned_output = non_finetuned("Tell me how to train my dog to sit")
     print(non_finetuned_output)
 
@@ -102,3 +102,18 @@ returns me back:
     4. Move the treat up and back: Slowly move the treat up and back, towards your dog's tail, while saying "sit" in a calm and clear voice.
     5. Dog will sit: As you move the treat, your dog will naturally sit down to follow the treat. The moment their bottom touches the ground, say "good sit" and give them the treat.
     6. Repeat the process: Repeat steps 3-5 several times, so your dog starts to associate the command "sit" with
+
+To get rid of the auto-completion on top (on command), we can inform the model that we want instruction, so I can put the instruction tags like:
+
+    print(finetuned_model("[INST]Tell me how to train my dog to sit[/INST]"))
+
+returns me back
+
+    Training your dog to sit is a basic obedience command that can be achieved with patience, consistency, and positive reinforcement. Here's a step-by-step guide on how to train your dog to sit:
+    
+    1. Choose a quiet and distraction-free area: Find a quiet area with no distractions where your dog can focus on you.
+    2. Have treats ready: Choose your dog's favorite treats and have them ready to use as rewards.
+    3. Stand in front of your dog: Stand in front of your dog and hold a treat close to their nose.
+    4. Move the treat up and back: Slowly move the treat up and back, towards your dog's tail, while saying "sit" in a calm and clear voice.
+    5. Dog will sit: As you move the treat, your dog will naturally sit down to follow the treat. The moment their bottom touches the ground, say "good sit" and give them the treat.
+    6. Repeat the process: Repeat steps 3-5 several times, so your dog starts to associate the command "sit" with the action of sitting down.
