@@ -13,7 +13,7 @@ Instructors: Sharon Zhou and Andrew Ng
     5. [Benefits of fine-tuning our own LLM](#5)
     6. [Technology stack used in this course](#6)
     7. [Installation](#7)
-
+2. [fine-tuned vs. non-fine-tuned models](#8)
 
 <a name="1"></a>
 ## Introduction 
@@ -73,7 +73,18 @@ https://lamini-ai.github.io/#training
     conda create --name llm python=3.10.12 (python 3.12 was not compatible)
     pip install --upgrade lamini
 
-fine-tuned vs. non-fine-tuned models:
+<a name="8"></a>
+## fine-tuned vs. non-fine-tuned models
+
+    from llama import BasicModelRunner
+    non_finetuned_output = non_finetuned("Tell me how to train my dog to sit")
+    print(non_finetuned_output)
+
+returns me back 
+
+    Tell me how to train my dog to sit. I have a 10 month old puppy and I want to train him to sit. I have tried the treat method and he just sits there and looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks at me like I am crazy. I have tried the "sit" command and he just looks
+
+
 
     non_finetuned   = BasicModelRunner("meta-llama/Llama-2-7b-hf")
     finetuned_model = BasicModelRunner("meta-llama/Llama-2-7b-chat-hf")
