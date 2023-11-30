@@ -72,3 +72,8 @@ https://lamini-ai.github.io/#training
 
     conda create --name llm python=3.10.12 (python 3.12 was not compatible)
     pip install --upgrade lamini
+
+fine-tuned vs. non-fine-tuned models:
+
+    non_finetuned   = BasicModelRunner("meta-llama/Llama-2-7b-hf")
+    finetuned_model = BasicModelRunner("meta-llama/Llama-2-7b-chat-hf")
