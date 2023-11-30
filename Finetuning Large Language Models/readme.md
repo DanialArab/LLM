@@ -117,3 +117,10 @@ returns me back
     4. Move the treat up and back: Slowly move the treat up and back, towards your dog's tail, while saying "sit" in a calm and clear voice.
     5. Dog will sit: As you move the treat, your dog will naturally sit down to follow the treat. The moment their bottom touches the ground, say "good sit" and give them the treat.
     6. Repeat the process: Repeat steps 3-5 several times, so your dog starts to associate the command "sit" with the action of sitting down.
+
+    chatgpt = BasicModelRunner("chat-gpt")
+    print(chatgpt("Tell me how to train my dog to sit"))
+
+returns me:
+
+    UserError: Currently this user has support for base models: ['hf-internal-testing/tiny-random-gpt2', 'EleutherAI/pythia-70m', 'EleutherAI/pythia-70m-deduped', 'EleutherAI/pythia-70m-v0', 'EleutherAI/pythia-70m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m-v1', 'EleutherAI/neox-ckpt-pythia-70m-deduped-v1', 'EleutherAI/gpt-neo-125m', 'EleutherAI/pythia-160m', 'EleutherAI/pythia-160m-deduped', 'EleutherAI/pythia-160m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m', 'EleutherAI/neox-ckpt-pythia-160m', 'EleutherAI/neox-ckpt-pythia-160m-deduped-v1', 'EleutherAI/pythia-2.8b', 'EleutherAI/pythia-410m', 'EleutherAI/pythia-410m-v0', 'EleutherAI/pythia-410m-deduped', 'EleutherAI/pythia-410m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-410m', 'EleutherAI/neox-ckpt-pythia-410m-deduped-v1', 'cerebras/Cerebras-GPT-111M', 'cerebras/Cerebras-GPT-256M', 'meta-llama/Llama-2-7b-hf', 'meta-llama/Llama-2-7b-chat-hf', 'meta-llama/Llama-2-13b-chat-hf', 'meta-llama/Llama-2-70b-chat-hf', 'Intel/neural-chat-7b-v3-1']
