@@ -134,3 +134,6 @@ returns me:
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20scraping.png)
 
+
+![](https://github.com/DanialArab/images/blob/main/LLM/limitations%20of%20pretrained%20models.png)
+
