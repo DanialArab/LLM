@@ -138,3 +138,6 @@ returns me:
  
 ![](https://github.com/DanialArab/images/blob/main/LLM/limitations%20of%20pretrained%20models.png)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/fine%20tuning%20after%20pretraining.png)
+
+
