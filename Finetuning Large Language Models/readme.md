@@ -129,3 +129,6 @@ returns me:
 <a name="9"></a>
 ## Where fine-tuning fits in
 
+![](https://github.com/DanialArab/images/blob/main/LLM/pretraining.png)
+
+
