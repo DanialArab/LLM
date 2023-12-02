@@ -14,7 +14,7 @@ Instructors: Sharon Zhou and Andrew Ng
     6. [Technology stack used in this course](#6)
     7. [Installation](#7)
 2. [fine-tuned vs. non-fine-tuned models](#8)
-
+3. [Where fine-tuning fits in](#9)
 <a name="1"></a>
 ## Introduction 
 
@@ -124,4 +124,8 @@ returns me back
 returns me:
 
     UserError: Currently this user has support for base models: ['hf-internal-testing/tiny-random-gpt2', 'EleutherAI/pythia-70m', 'EleutherAI/pythia-70m-deduped', 'EleutherAI/pythia-70m-v0', 'EleutherAI/pythia-70m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m-v1', 'EleutherAI/neox-ckpt-pythia-70m-deduped-v1', 'EleutherAI/gpt-neo-125m', 'EleutherAI/pythia-160m', 'EleutherAI/pythia-160m-deduped', 'EleutherAI/pythia-160m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-70m', 'EleutherAI/neox-ckpt-pythia-160m', 'EleutherAI/neox-ckpt-pythia-160m-deduped-v1', 'EleutherAI/pythia-2.8b', 'EleutherAI/pythia-410m', 'EleutherAI/pythia-410m-v0', 'EleutherAI/pythia-410m-deduped', 'EleutherAI/pythia-410m-deduped-v0', 'EleutherAI/neox-ckpt-pythia-410m', 'EleutherAI/neox-ckpt-pythia-410m-deduped-v1', 'cerebras/Cerebras-GPT-111M', 'cerebras/Cerebras-GPT-256M', 'meta-llama/Llama-2-7b-hf', 'meta-llama/Llama-2-7b-chat-hf', 'meta-llama/Llama-2-13b-chat-hf', 'meta-llama/Llama-2-70b-chat-hf', 'Intel/neural-chat-7b-v3-1']
+
+
+<a name="9"></a>
+## Where fine-tuning fits in
 
