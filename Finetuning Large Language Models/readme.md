@@ -142,5 +142,8 @@ returns me:
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/what%20fine-tuning%20can%20do.png)
 
-![](https://github.com/DanialArab/images/blob/main/LLM/tasks%20to%20finetune.png)
+**Tasks for fine-tuning are really just text in, text out for LLMs**. And we can think about it in two different categories:
++ Extraction (lot of the work is in reading)
++ Expansion (lot of the work is in writing)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/tasks%20to%20finetune.png)
