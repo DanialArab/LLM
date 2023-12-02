@@ -147,3 +147,6 @@ returns me:
 + Expansion (lot of the work is in writing)
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/tasks%20to%20finetune.png)
+
+![](https://github.com/DanialArab/images/blob/main/LLM/first%20time%20fine-tuning.png)
+
