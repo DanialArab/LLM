@@ -132,3 +132,5 @@ returns me:
 ![](https://github.com/DanialArab/images/blob/main/LLM/pretraining.png)
 
 
+![](https://github.com/DanialArab/images/blob/main/LLM/data%20scraping.png)
+
