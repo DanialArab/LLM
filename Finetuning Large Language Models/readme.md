@@ -140,4 +140,6 @@ returns me:
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/fine%20tuning%20after%20pretraining.png)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/what%20fine-tuning%20can%20do.png)
+
 
