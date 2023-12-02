@@ -134,6 +134,7 @@ returns me:
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20scraping.png)
 
+ Pre-trained base models have been trained on the data sets from the web and it might have this geography homework that asks What's the capital of Kenya? What's the capital of France? And it all, in a line without seeing the answers. So when you then input, what's the capital of Mexico, the LLM might just say, what's the capital of Hungary? As you can see that it's not really useful from the sense of a chatbot interface. **So how do you get it to that chatbot interface?**
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/limitations%20of%20pretrained%20models.png)
 
