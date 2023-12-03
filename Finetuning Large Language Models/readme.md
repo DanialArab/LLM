@@ -15,6 +15,9 @@ Instructors: Sharon Zhou and Andrew Ng
     7. [Installation](#7)
 2. [fine-tuned vs. non-fine-tuned models](#8)
 3. [Where fine-tuning fits in](#9)
+4. [Instruction fine-tuning](#10)
+
+
 <a name="1"></a>
 ## Introduction 
 
@@ -150,3 +153,6 @@ returns me:
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/first%20time%20fine-tuning.png)
 
+
+<a name="10"></a>
+## Instruction fine-tuning
