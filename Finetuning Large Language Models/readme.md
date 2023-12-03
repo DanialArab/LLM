@@ -167,4 +167,6 @@ If you don't have data, no problem. You can also convert your data into somethin
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning%20generaliztion.png)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning%20generaliztion%202.png)
+
 
