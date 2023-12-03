@@ -74,7 +74,7 @@ https://lamini-ai.github.io/#training
 <a name="7"></a>
 ### Installation -- https://lamini-ai.github.io/get_started/install/#1-get-your-lamini-api-key
 
-    conda create --name llm python=3.10.12 (python 3.12 was not compatible)
+    conda create --name llm python=3.10.12 # python 3.12 was not compatible
     pip install --upgrade lamini
 
 <a name="8"></a>
