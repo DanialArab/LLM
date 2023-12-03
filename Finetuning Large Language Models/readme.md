@@ -169,4 +169,5 @@ If you don't have data, no problem. You can also convert your data into somethin
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning%20generaliztion%202.png)
 
-
+So one of the coolest things about fine-tuning is that **it teaches this new behavior to the model.** And while you might have fine-tuning data on what's the capital of France, Paris, because these are easy question-answer pairs that you can get. **You can also generalize this idea of question 
+answering to data you might not have given the model for your fine-tuning dataset, but that the model had already learned in its pre-existing pre-training step.** And so that might be code. And this is actually findings from the chat GPT paper where the model can now answer questions about code even though they didn't have question-answer pairs about that for their instruction fine-tuning. 
