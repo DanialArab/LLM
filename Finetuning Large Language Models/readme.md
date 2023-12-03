@@ -156,3 +156,9 @@ returns me:
 
 <a name="10"></a>
 ## Instruction fine-tuning
+
+Instruction fine-tuning is a variant of fine-tuning that enabled GPT-3 to turn into chat GPT and give it its chatting powers. 
+
+![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning.png)
+
+
