@@ -171,6 +171,6 @@ So one of the coolest things about fine-tuning is that **it teaches this new beh
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning%20generaliztion%202.png)
 
-An overview of the different steps of fine-tuning are data prep, training, and evaluation. Of course, after you evaluate the model, you need to prep the data again to improve it. It's a very iterative process to improve the model. **And specifically for instruction fine-tuning and other different types of fine-tuning, data prep is really where you have differences. This is really where you change your data, you tailor your data to the specific type of fine-tuning, the specific task of fine-tuning that you're doing. And training and evaluation are very similar.**
+An overview of the different steps of fine-tuning are data prep, training, and evaluation. Of course, after you evaluate the model, you need to prep the data again to improve it. It's a very iterative process to improve the model. **And specifically for instruction fine-tuning and other different types of fine-tuning, data prep is really where you have differences. This is really where you change your data, you tailor your data to the specific type of fine-tuning that you're doing. Training and evaluation are very similar.**
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/interative%20process%20of%20fine-tuning.png)
