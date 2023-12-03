@@ -161,4 +161,10 @@ Instruction fine-tuning is a variant of fine-tuning that enabled GPT-3 to turn i
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning.png)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/instruction-following%20datasets.png)
+
+If you don't have data, no problem. You can also convert your data into something that's more of a question-answer format or instruction-following format by using a prompt template. So a README might be able to be converted into a question-answer pair. You can also use another **LLM to do this for you. There's a technique called Alpaca from Stanford that uses chat GPT to do this. And of course, you can use a pipeline of different open-source models to do this as well.**
+
+![](https://github.com/DanialArab/images/blob/main/LLM/instruction%20fine-tuning%20generaliztion.png)
+
 
