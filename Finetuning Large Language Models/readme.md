@@ -173,4 +173,6 @@ An overview of the different steps of fine-tuning are data prep, training, and e
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/type%20of%20data.png)
 
+![](https://github.com/DanialArab/images/blob/main/LLM/data%20preparation.png)
+
 
