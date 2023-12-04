@@ -177,4 +177,9 @@ An overview of the different steps of fine-tuning are data prep, training, and e
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20tokenizing.png)
 
+Some implementayion notes:
 
++ **AutoTokenizer class from the Transformers library by HuggingFace** does an amazing job to automatically finds the right tokenizer for your model when you just specify what the model is. So all you have to do 
+is put the model and name in.
+
+ 
