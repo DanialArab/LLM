@@ -206,3 +206,13 @@ is put the model and name in.
 returns me back
 
         Using padding:  [[12764, 13, 849, 403, 368, 32], [42, 1353, 1175, 0, 0, 0], [4374, 0, 0, 0, 0, 0]]
+
++ Your model will also have a max length that it can handle and take in so it can't just fit everything in and you've played with prompts before and you've noticed probably that there is a limit to the prompt length and so this is the same thing and **truncation is a strategy to handle making those encoded text much shorter and that fit actually into the model** so this is one way to make it 
+shorter:
+
+        encoded_texts_truncation = tokenizer(list_texts, max_length=3, truncation=True)
+        print("Using truncation: ", encoded_texts_truncation["input_ids"])
+
+returns me back:
+
+        Using truncation:  [[403, 368, 32], [42, 1353, 1175], [4374]]
