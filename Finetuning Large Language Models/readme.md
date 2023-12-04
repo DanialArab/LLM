@@ -215,4 +215,15 @@ shorter:
 
 returns me back:
 
-        Using truncation:  [[403, 368, 32], [42, 1353, 1175], [4374]]
+        Using truncation:  [[12764, 13, 849], [42, 1353, 1175], [4374]]
+
+and also
+
+        tokenizer.truncation_side = "left"
+        encoded_texts_truncation_left = tokenizer(list_texts, max_length=3, truncation=True)
+        print("Using left-side truncation: ", encoded_texts_truncation_left["input_ids"])
+
+returns me back:
+
+        Using left-side truncation:  [[403, 368, 32], [42, 1353, 1175], [4374]]
+
