@@ -176,7 +176,10 @@ A few good best practices.
 + Diversity. So having diverse data that covers a lot of aspects of your use case is helpful. **If all your inputs and outputs are the same, then the model can start to memorize them and if that's not exactly what you want, then the model will start to just only spout the same thing over and over again.**
 + There are a lot of ways to create generated data, but actually having real data is very, very effective and helpful most of the time, especially for those writing tasks. And that's because **generated data already has 
  certain patterns to it**. You might've heard of some services that are trying to detect whether something is generated or not. And that's actually because there are patterns in generated data that they're trying to detect.
-+ 
++ And finally, I put this last because actually in most machine learning applications, having way more data is important than less data. But as you actually just seen before, pre-training handles a lot of this problem. 
+Pre-training has learned from a lot of data, all from the internet. And so it already has a good base understanding. It's not starting from zero. And so having more data is helpful for the model, but not as important as the top three and definitely not as important as quality. 
+
+
 
  
 ![](https://github.com/DanialArab/images/blob/main/LLM/type%20of%20data.png)
@@ -185,7 +188,7 @@ A few good best practices.
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20tokenizing.png)
 
-Some implementayion notes:
+Some implementation notes:
 
 + **AutoTokenizer class from the Transformers library by HuggingFace** does an amazing job to automatically finds the right tokenizer for your model when you just specify what the model is. So all you have to do 
 is put the model and name in.
