@@ -178,13 +178,15 @@ A few good best practices:
  certain patterns to it**. You might've heard of some services that are trying to detect whether something is generated or not. And that's actually because there are patterns in generated data that they're trying to detect.
 + And finally, I put this last because actually in most machine learning applications, having way more data is important than less data. But as you actually just seen before, pre-training handles a lot of this problem. 
 Pre-training has learned from a lot of data, all from the internet. And so it already has a good base understanding. It's not starting from zero. And so having more data is helpful for the model, but not as important as the top three and definitely not as important as quality. 
-
-
-
  
 ![](https://github.com/DanialArab/images/blob/main/LLM/type%20of%20data.png)
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20preparation.png)
+
+**Tokenizing your data is taking your text data and actually turning that into numbers that represent each of those pieces of text**. It's not actually necessarily by word. It's based on the frequency of common 
+character occurrences. And so in this case, one of my favorites is the ING token, which is very common in tokenizers. And that's because that happens in every single gerund. So in here, you can see finetuning, ING. 
+So every single, you know, verb in the gerund, you know, fine-tuning or tokenizing all has ING and that maps onto the token 278 here. And when you decode it with the same tokenizer, it turns back into the same text. Now there are a lot of different tokenizers and a tokenizer is really associated with a specific model for each model as it was trained on it. And if you give the wrong tokenizer to your model, it'll be very confused because it will expect different numbers to represent different sets of letters and different words. So make sure you use the right tokenizer and you'll see how to do that easily in the lab. 
+
 
 ![](https://github.com/DanialArab/images/blob/main/LLM/data%20tokenizing.png)
 
