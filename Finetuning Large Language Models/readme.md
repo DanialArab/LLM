@@ -171,7 +171,7 @@ An overview of the different steps of fine-tuning are data prep, training, and e
 <a name="11"></a>
 ## Data preparation
 
-A few good best practices. 
+A few good best practices:
 + You want higher quality data and actually that is the number one thing you need for fine-tuning rather than lower quality data.
 + Diversity. So having diverse data that covers a lot of aspects of your use case is helpful. **If all your inputs and outputs are the same, then the model can start to memorize them and if that's not exactly what you want, then the model will start to just only spout the same thing over and over again.**
 + There are a lot of ways to create generated data, but actually having real data is very, very effective and helpful most of the time, especially for those writing tasks. And that's because **generated data already has 
