@@ -17,6 +17,7 @@ Instructors: Sharon Zhou and Andrew Ng
 3. [Where fine-tuning fits in](#9)
 4. [Instruction fine-tuning](#10)
 5. [Data preparation](#11)
+6. [Training process](#12)
 
 
 <a name="1"></a>
@@ -226,4 +227,8 @@ and also
 returns me back:
 
         Using left-side truncation:  [[403, 368, 32], [42, 1353, 1175], [4374]]
+
+
+<a name="12"></a>
+## Training process
 
