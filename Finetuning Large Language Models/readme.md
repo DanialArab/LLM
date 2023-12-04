@@ -196,3 +196,13 @@ Some implementation notes:
 is put the model and name in.
 
          tokenizer = AutoTokenizer.from_pretrained("EleutherAI/pythia-70m")
+
++ Something that's really important for models is that everything in a batch is the same length because you're operating with fixed-size tensors. And so the text needs to be the same. So one thing that we do is something called padding. **Padding is a strategy to handle these variable length encoded texts.** For our padding token, you have to specify what you want to, what number you want to represent for, for padding.
+
+        tokenizer.pad_token = tokenizer.eos_token 
+        encoded_texts_longest = tokenizer(list_texts, padding=True)
+        print("Using padding: ", encoded_texts_longest["input_ids"])
+
+returns me back
+
+        Using padding:  [[12764, 13, 849, 403, 368, 32], [42, 1353, 1175, 0, 0, 0], [4374, 0, 0, 0, 0, 0]]
