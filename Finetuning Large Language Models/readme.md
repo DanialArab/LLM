@@ -1,7 +1,11 @@
 
 # Finetuning Large Language Models
 
-Reference: <a href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models//">Finetuning Large Language Models</a>
+Reference
+
+<a href="https://www.deeplearning.ai/short-courses/finetuning-large-language-models//">Finetuning Large Language Models</a>
+
+Also a good resource: https://www.youtube.com/watch?v=g68qlo9Izf0
 
 Instructors: Sharon Zhou and Andrew Ng
 
